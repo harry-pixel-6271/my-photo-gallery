@@ -31,10 +31,3 @@ html{scroll-behavior:smooth}body{margin:0;color:#fff;font-family:Poppins,sans-se
 @keyframes cadburyIn{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
 @media(max-width:760px){.cadbury-grid{grid-template-columns:1fr 1fr}.cadbury-grid img{height:300px}}
 @media(max-width:480px){.cadbury-grid{grid-template-columns:1fr}.cadbury-grid img{height:390px}}
-
-.album.hidden{display:none!important}
-.album:not(.hidden){display:block!important}
-.final.hidden{display:none!important}
-.final:not(.hidden){display:block!important}
-.last.hidden{display:none!important}
-.last:not(.hidden){display:block!important}
