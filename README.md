@@ -1,34 +1,28 @@
-# Rutuja Birthday Website 🎂💖
+# Rutuja Birthday — Final GitHub Pages Version 🎂💖
 
-A ready-to-use GitHub Pages birthday website for Rutuja / Mhashe.
+### Included
+- 6 Rutuja photos
+- Birthday message + jokes
+- Confetti
+- Mobile-friendly gallery
+- 2 video slots
+- Local MP3 song slot
+- GitHub Pages-safe relative paths
 
-## Files
+### Add Angreza
+Put your legally obtained audio file here:
 
-- `index.html`
-- `style.css`
-- `script.js`
-- `images/rutuja1.jpg` through `images/rutuja6.jpg`
+`music/angreza.mp3`
 
-The six uploaded photos are already included.
+It starts when **Open Your Surprise** is tapped.
 
-## Music
+### Add videos
+Put your own videos here:
 
-The birthday tune is generated in JavaScript when the visitor taps **Open Your Surprise**, so there is no separate copyrighted music file to upload.
+`videos/video1.mp4`
+`videos/video2.mp4`
 
-## Publish on GitHub Pages
-
-1. Create a new GitHub repository, for example `rutuja-birthday`.
-2. Upload all files and the `images` folder.
-3. Open **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Choose the `main` branch and `/ (root)`.
-6. Save and wait for GitHub Pages to publish the site.
-
-
-## Important for mobile / GitHub Pages
-
-Keep the structure exactly like this:
-
+### Exact structure
 ```text
 index.html
 style.css
@@ -40,6 +34,15 @@ images/
   Rutuja4.jpg
   Rutuja5.jpg
   Rutuja6.jpg
+music/
+  angreza.mp3
+videos/
+  video1.mp4
+  video2.mp4
 ```
 
-Upload the **images folder itself** to the repository. Do not upload only the photos separately.
+Keep the capitalization exactly as shown. GitHub Pages paths are case-sensitive.
+
+### Publish
+Upload the whole structure to the repository root.
+Then GitHub → Settings → Pages → Deploy from branch → `main` → `/ (root)` → Save.
