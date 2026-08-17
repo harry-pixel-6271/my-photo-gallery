@@ -1,15 +1,31 @@
-# Rutuja Birthday — 3 Folder Version
+# Same-page final version
 
-No `images` folder is used.
+All three sections open inside the SAME webpage.
 
-Folders:
-- `01_Her_Best_Images` — her best photos + `song.mp3`
-- `02_Her_Ugly_Images` — ugly/funny photos + different `song.mp3`
-- `03_Her_Best_Friend` — best-friend photos + different `song.mp3`
-- `04_Final_Surprise` — one final image named `final.jpg`
+## 01_Her_Best_Images
+- photo1.jpg
+- photo2.jpg
+- photo3.jpg
+- song.mp3
 
-The six uploaded photos are already in the first folder.
+## 02_Her_Ugly_Images
+- video1.mp4
+- photo1.jpg
+- photo2.jpg
+- photo3.jpg
+- video2.mp4
+- song.mp3
 
-The site tries to play the first song immediately on opening. **Mobile browsers can block audible autoplay until the first tap; this is enforced by the browser and cannot be bypassed by JavaScript.** The first tap resumes music automatically.
+## 03_Her_Best_Friend
+- photo1.jpg
+- photo2.jpg
+- photo3.jpg
+- photo4.jpg
+- song.mp3
 
-Keep all names/capitalization exactly as shown.
+## 04_Final_Surprise
+- final.jpg
+
+The last image is hidden behind the "One More Surprise" button.
+
+Music attempts to autoplay, but mobile browsers may require the first tap before audible playback.

@@ -1,71 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Happy Birthday Rutuja 💖</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Happy Birthday Rutuja 💖</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="stars"></div>
-  <div class="balloon b1">🎈</div>
-  <div class="balloon b2">🎈</div>
-  <div class="balloon b3">🎈</div>
+<div class="stars"></div>
+<main>
+<section class="hero">
+<div class="badge">18 AUGUST • RUTUJA'S DAY ✨</div>
+<h1>Happy Birthday,<br><span>Rutuja 💖</span></h1>
+<p class="subtitle">Mhashe, this little corner of the internet is made specially for you. 🎂</p>
+<button class="primary" id="startBtn">🎁 Open Your Surprise</button>
+<p class="tap-note">🎵 Music starts here if your phone blocks autoplay.</p>
+</section>
 
-  <main>
-    <section class="hero">
-      <div class="badge">18 AUGUST • RUTUJA'S DAY ✨</div>
-      <h1>Happy Birthday,<br><span>Rutuja 💖</span></h1>
-      <p class="subtitle">Mhashe, today is officially your day. So take a deep breath, smile, and get ready for a tiny internet-sized surprise. 🎂</p>
-      <button class="primary" id="startBtn">🎁 Open Your Surprise</button>
-      <p class="tap-note">🔊 Tap the button for the birthday tune + surprise</p>
-    </section>
-
-<section class="message hidden" id="message">
-<div class="card"><p class="eyebrow">A little message 💌</p><h2>Dear Rutuja,</h2>
-<p>Happy Birthday to one of the most special people ever! 🥳 I hope this year brings you happiness, crazy memories, peaceful days and everything you've been wishing for.</p>
+<section class="message hidden" id="message"><div class="card">
+<p class="eyebrow">A LITTLE MESSAGE 💌</p><h2>Dear Rutuja,</h2>
+<p>Happy Birthday! 🥳 I hope this year gives you happiness, peaceful days, crazy memories and everything you've been wishing for.</p>
 <p>Keep smiling, keep being your crazy self, and never forget how loved and important you are. ❤️</p>
 <p class="joke-line">Your warranty has officially been extended for another year. Please continue being awesome. 😂</p>
-<p class="signature">Happy Birthday, Mhashe! 💗<br>Stay happy. Stay crazy. Stay you.</p></div>
-</section>
-
-<nav class="folder-nav hidden" id="folderNav">
-<button class="folder active" data-section="her">👑<b>Her Best</b><small>Only Rutuja</small></button>
-<button class="folder" data-section="ugly">😂<b>Ugly Collection</b><small>Funny memories</small></button>
-<button class="folder" data-section="friends">👯<b>Best Friends</b><small>The gang</small></button>
-</nav>
-
-<section class="folder-section hidden" id="her">
-<div class="label">👑 ONLY FOR HER</div><h2>Rutuja's Best Moments</h2>
-<p class="note">Add her best photos + <b>song.mp3</b> inside <b>01_Her_Best_Images</b>.</p>
-<div class="grid">
-<figure><img src="./01_Her_Best_Images/Rutuja1.jpg"><figcaption>Birthday Queen 👑</figcaption></figure>
-<figure><img src="./01_Her_Best_Images/Rutuja2.jpg"><figcaption>Baby... 💗</figcaption></figure>
-<figure><img src="./01_Her_Best_Images/Rutuja3.jpg"><figcaption>#forever.. 💕</figcaption></figure>
-<figure><img src="./01_Her_Best_Images/Rutuja4.jpg"><figcaption>Cutie mode 🎀</figcaption></figure>
-<figure><img src="./01_Her_Best_Images/Rutuja5.jpg"><figcaption>That smile ✨</figcaption></figure>
-<figure><img src="./01_Her_Best_Images/Rutuja6.jpg"><figcaption>18 August Queen 💖</figcaption></figure>
+<p class="signature">Happy Birthday, Mhashe! 💗<br>Stay happy. Stay crazy. Stay you.</p>
 </div></section>
 
-<section class="folder-section hidden" id="ugly">
-<div class="label">😂 ENTER AT YOUR OWN RISK</div><h2>The Ugly Collection</h2>
-<p class="note">Put all funny/ugly photos + a different <b>song.mp3</b> in <b>02_Her_Ugly_Images</b>.</p>
-<div class="empty">📸<br><b>Put your ugly photos in this folder.</b><br><small>The page is ready for them.</small></div>
+<section class="chooser hidden" id="chooser">
+<h2>Choose a memory folder 💕</h2>
+<div class="folder-buttons">
+<button class="folder-btn" data-target="her">👑<b>Her Best</b><small>3 best photos</small></button>
+<button class="folder-btn" data-target="ugly">😂<b>Ugly Collection</b><small>Video • photos • video</small></button>
+<button class="folder-btn" data-target="friends">👯<b>Best Friends</b><small>4 memories</small></button>
+</div>
 </section>
 
-<section class="folder-section hidden" id="friends">
+<section class="album hidden" id="her">
+<button class="back">← Back to folders</button>
+<div class="label">👑 ONLY FOR HER</div><h2>Rutuja's Best Moments</h2>
+<p class="note">Files: <b>01_Her_Best_Images/photo1.jpg</b> to <b>photo3.jpg</b> + <b>song.mp3</b></p>
+<div class="grid three">
+<figure><img src="./01_Her_Best_Images/photo1.jpg"><figcaption>Birthday Queen 👑</figcaption></figure>
+<figure><img src="./01_Her_Best_Images/photo2.jpg"><figcaption>That smile ✨</figcaption></figure>
+<figure><img src="./01_Her_Best_Images/photo3.jpg"><figcaption>Just Rutuja 💖</figcaption></figure>
+</div></section>
+
+<section class="album hidden" id="ugly">
+<button class="back">← Back to folders</button>
+<div class="label">😂 ENTER AT YOUR OWN RISK</div><h2>The Ugly Collection</h2>
+<p class="note">Order: video → 3 images → video. Put <b>song.mp3</b> in this folder too.</p>
+<div class="ugly-flow">
+<div class="video-card"><video controls playsinline preload="metadata"><source src="./02_Her_Ugly_Images/video1.mp4" type="video/mp4"></video><span>🎥 Opening evidence</span></div>
+<div class="grid three">
+<figure><img src="./02_Her_Ugly_Images/photo1.jpg"><figcaption>Evidence #1 😂</figcaption></figure>
+<figure><img src="./02_Her_Ugly_Images/photo2.jpg"><figcaption>Evidence #2 😭</figcaption></figure>
+<figure><img src="./02_Her_Ugly_Images/photo3.jpg"><figcaption>Evidence #3 🤣</figcaption></figure>
+</div>
+<div class="video-card"><video controls playsinline preload="metadata"><source src="./02_Her_Ugly_Images/video2.mp4" type="video/mp4"></video><span>🎥 Final evidence</span></div>
+</div></section>
+
+<section class="album hidden" id="friends">
+<button class="back">← Back to folders</button>
 <div class="label">👯 THE GANG</div><h2>Best Friend Memories</h2>
-<p class="note">Put best-friend photos + a different <b>song.mp3</b> in <b>03_Her_Best_Friend</b>.</p>
-<div class="empty">👯<br><b>Put your best-friend photos in this folder.</b><br><small>The page is ready for them.</small></div>
+<p class="note">Files: <b>03_Her_Best_Friend/photo1.jpg</b> to <b>photo4.jpg</b> + <b>song.mp3</b></p>
+<div class="grid four">
+<figure><img src="./03_Her_Best_Friend/photo1.jpg"><figcaption>Memory #1 💕</figcaption></figure>
+<figure><img src="./03_Her_Best_Friend/photo2.jpg"><figcaption>Memory #2 ✨</figcaption></figure>
+<figure><img src="./03_Her_Best_Friend/photo3.jpg"><figcaption>Memory #3 🫶</figcaption></figure>
+<figure><img src="./03_Her_Best_Friend/photo4.jpg"><figcaption>Memory #4 💗</figcaption></figure>
+</div></section>
+
+<section class="last hidden" id="last">
+<div class="heart">💗</div><h2>Wait... there's one more thing.</h2>
+<button class="primary" id="lastBtn">🎁 One More Surprise</button>
 </section>
 
 <section class="final hidden" id="final">
-<div class="label">🎁 ONE LAST SURPRISE</div><h2>Just for you, Rutuja 💗</h2>
+<div class="label">✨ ONE LAST SURPRISE</div><h2>Just for you, Rutuja 💗</h2>
 <div class="single"><img src="./04_Final_Surprise/final.jpg"></div>
-<p>Put one special image named <b>final.jpg</b> in <b>04_Final_Surprise</b>.</p>
 <h3>Happy Birthday! 🎂✨</h3>
 </section>
 </main>
