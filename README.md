@@ -40,3 +40,12 @@ Use:
 `cadbury1.jpg`, `cadbury2.jpg`, `cadbury3.jpg`, etc.
 
 The joke is that she ate Cadbury without Harry. 😂🍫
+
+
+## Four uploaded tracks
+- `entry.mp4` — entry music
+- `01_Her_Best_Images/her_pic.mp4` — Her Best
+- `02_Her_Ugly_Images/ugly_pic.mpeg` — Ugly Collection
+- `03_Her_Best_Friend/friends.mp4` — Best Friends
+
+The site attempts autoplay on entry; mobile browsers may require the first tap before audible playback is allowed.
