@@ -54,3 +54,12 @@ footer{position:relative;z-index:2;text-align:center;color:#8f87a6;padding:20px;
 @keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:0}}
 @media(max-width:760px){.reveal{grid-template-columns:1fr}.photo-grid{grid-template-columns:1fr 1fr}.facts{grid-template-columns:1fr}.main-photo,.main-photo img{min-height:460px}.photo-grid img{height:300px}h1{letter-spacing:-2px}}
 @media(max-width:480px){.photo-grid{grid-template-columns:1fr}.photo-grid img{height:390px}}
+
+.image-fallback{
+  min-height:260px;
+  display:grid;
+  place-items:center;
+  color:#ffd6e9;
+  background:rgba(255,255,255,.06);
+  font-weight:600;
+}

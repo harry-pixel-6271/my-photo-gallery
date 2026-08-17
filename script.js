@@ -49,3 +49,13 @@ function startBirthdayMusic(){
     });
   }catch(e){console.log("Audio unavailable:",e)}
 }
+
+document.querySelectorAll("img").forEach((img) => {
+  img.addEventListener("error", () => {
+    img.style.display = "none";
+    const fallback = document.createElement("div");
+    fallback.className = "image-fallback";
+    fallback.textContent = "📸 Photo unavailable";
+    img.parentElement.appendChild(fallback);
+  });
+});
