@@ -1,48 +1,15 @@
-# Rutuja Birthday — Final GitHub Pages Version 🎂💖
+# Rutuja Birthday — 3 Folder Version
 
-### Included
-- 6 Rutuja photos
-- Birthday message + jokes
-- Confetti
-- Mobile-friendly gallery
-- 2 video slots
-- Local MP3 song slot
-- GitHub Pages-safe relative paths
+No `images` folder is used.
 
-### Add Angreza
-Put your legally obtained audio file here:
+Folders:
+- `01_Her_Best_Images` — her best photos + `song.mp3`
+- `02_Her_Ugly_Images` — ugly/funny photos + different `song.mp3`
+- `03_Her_Best_Friend` — best-friend photos + different `song.mp3`
+- `04_Final_Surprise` — one final image named `final.jpg`
 
-`music/angreza.mp3`
+The six uploaded photos are already in the first folder.
 
-It starts when **Open Your Surprise** is tapped.
+The site tries to play the first song immediately on opening. **Mobile browsers can block audible autoplay until the first tap; this is enforced by the browser and cannot be bypassed by JavaScript.** The first tap resumes music automatically.
 
-### Add videos
-Put your own videos here:
-
-`videos/video1.mp4`
-`videos/video2.mp4`
-
-### Exact structure
-```text
-index.html
-style.css
-script.js
-images/
-  Rutuja1.jpg
-  Rutuja2.jpg
-  Rutuja3.jpg
-  Rutuja4.jpg
-  Rutuja5.jpg
-  Rutuja6.jpg
-music/
-  angreza.mp3
-videos/
-  video1.mp4
-  video2.mp4
-```
-
-Keep the capitalization exactly as shown. GitHub Pages paths are case-sensitive.
-
-### Publish
-Upload the whole structure to the repository root.
-Then GitHub → Settings → Pages → Deploy from branch → `main` → `/ (root)` → Save.
+Keep all names/capitalization exactly as shown.
