@@ -8,3 +8,26 @@ html{scroll-behavior:smooth}body{margin:0;color:#fff;font-family:Poppins,sans-se
   line-height:1.8;
   font-weight:500;
 }
+
+.cadbury-section{
+  display:none;
+  border:1px solid var(--b);
+  background:var(--g);
+  backdrop-filter:blur(18px);
+  border-radius:28px;
+  padding:35px 25px;
+  margin:50px 0 80px;
+  text-align:center;
+  box-shadow:0 25px 70px rgba(0,0,0,.2);
+}
+.cadbury-section.active{display:block;animation:cadburyIn .8s ease both}
+.cadbury-section h2{font-family:Pacifico,cursive;font-weight:400;font-size:2.4rem;color:#ff9fc8;margin:14px 0}
+.cadbury-intro{color:#ddd5e9;line-height:1.8}
+.cadbury-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+.cadbury-grid figure{margin:0;position:relative;border-radius:22px;overflow:hidden;border:1px solid var(--b);background:#111}
+.cadbury-grid img{width:100%;height:300px;object-fit:cover;display:block}
+.cadbury-grid figcaption{position:absolute;left:10px;right:10px;bottom:10px;padding:9px;border-radius:13px;background:rgba(0,0,0,.52)}
+.verdict{margin:28px auto 0;max-width:700px;padding:16px;border-radius:18px;background:rgba(255,79,154,.1);color:#ffe0ed;font-weight:600}
+@keyframes cadburyIn{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+@media(max-width:760px){.cadbury-grid{grid-template-columns:1fr 1fr}.cadbury-grid img{height:300px}}
+@media(max-width:480px){.cadbury-grid{grid-template-columns:1fr}.cadbury-grid img{height:390px}}

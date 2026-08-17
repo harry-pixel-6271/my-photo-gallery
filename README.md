@@ -29,3 +29,14 @@ All three sections open inside the SAME webpage.
 The last image is hidden behind the "One More Surprise" button.
 
 Music attempts to autoplay, but mobile browsers may require the first tap before audible playback.
+
+\n## 🍫 Cadbury Crimes
+After **One More Surprise**, the page reveals a new section called **Cadbury Crimes: Evidence Room**.
+
+Put her Cadbury photos in:
+`05_Cadbury_Crimes/`
+
+Use:
+`cadbury1.jpg`, `cadbury2.jpg`, `cadbury3.jpg`, etc.
+
+The joke is that she ate Cadbury without Harry. 😂🍫
