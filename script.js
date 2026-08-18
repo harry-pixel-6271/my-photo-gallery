@@ -1,7 +1,7 @@
 const start=document.getElementById("startBtn"),message=document.getElementById("message"),chooser=document.getElementById("chooser"),last=document.getElementById("last"),final=document.getElementById("final");
-const music=new Audio("./01_Her_Best_Images/song.mp3");music.loop=true;music.volume=1.0;music.preload="auto";
+const music=new Audio("./01_Her_Best_Images/song.mp3");music.loop=true;music.volume=2.0;music.preload="auto";
 function play(){
-  music.volume=1.0;
+  music.volume=2.0;
   music.play().catch(()=>{});
 }
 play();
