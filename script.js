@@ -1,24 +1,69 @@
-const start=document.getElementById("startBtn"),message=document.getElementById("message"),chooser=document.getElementById("chooser"),last=document.getElementById("last"),final=document.getElementById("final");
-const music=new Audio("./01_Her_Best_Images/song.mp3");music.loop=true;music.volume=2.0;music.preload="auto";
-function play(){
-  music.volume=2.0;
-  music.play().catch(()=>{});
-}
-play();
-document.addEventListener("pointerdown",()=>{
-  music.volume=1.0;
-  play();
-},{once:true});
-start.onclick=()=>{play();message.classList.remove("hidden");chooser.classList.remove("hidden");last.classList.remove("hidden");message.scrollIntoView({behavior:"smooth"})};
-const songs={her:"./01_Her_Best_Images/song.mp3",ugly:"./02_Her_Ugly_Images/song.mp3",friends:"./03_Her_Best_Friend/song.mp3"};
-document.querySelectorAll(".folder-btn").forEach(btn=>btn.onclick=()=>{chooser.classList.add("hidden");document.querySelectorAll(".album").forEach(x=>x.classList.add("hidden"));const a=document.getElementById(btn.dataset.target);a.classList.remove("hidden");music.pause();music.src=songs[btn.dataset.target];music.load();music.volume=1.0;play();a.scrollIntoView({behavior:"smooth",block:"start"})});
-document.querySelectorAll(".back").forEach(btn=>btn.onclick=()=>{btn.closest(".album").classList.add("hidden");chooser.classList.remove("hidden");chooser.scrollIntoView({behavior:"smooth"})});
-document.getElementById("lastBtn").onclick=()=>{final.classList.remove("hidden");final.scrollIntoView({behavior:"smooth"});};
+const start = document.getElementById("startBtn");
+const message = document.getElementById("message");
+const chooser = document.getElementById("chooser");
+const last = document.getElementById("last");
+const final = document.getElementById("final");
 
-document.getElementById("lastBtn").onclick=()=>{
-  const f=document.getElementById("final");
-  f.classList.add("active");
-  const c=document.getElementById("cadbury");
-  c.classList.add("active");
-  setTimeout(()=>c.scrollIntoView({behavior:"smooth",block:"start"}),450);
+const music = new Audio();
+music.loop = true;
+music.preload = "auto";
+music.volume = 1.0;
+
+const songs = {
+  entry: "./01_Her_Best_Images/song.mp3",
+  her: "./01_Her_Best_Images/song.mp3",
+  ugly: "./02_Her_Ugly_Images/song.mp3",
+  friends: "./03_Her_Best_Friend/song.mp3"
+};
+
+function playSong(src) {
+  if (!src) return;
+  music.pause();
+  music.src = src;
+  music.load();
+  music.volume = 1.0;
+  music.play().catch(() => {});
+}
+
+start.onclick = () => {
+  playSong(songs.entry);
+  message.classList.remove("hidden");
+  chooser.classList.remove("hidden");
+  last.classList.remove("hidden");
+  message.scrollIntoView({behavior:"smooth", block:"start"});
+};
+
+document.querySelectorAll(".folder-btn").forEach(btn => {
+  btn.onclick = () => {
+    const album = document.getElementById(btn.dataset.target);
+    if (!album) return;
+
+    chooser.classList.add("hidden");
+    document.querySelectorAll(".album").forEach(x => x.classList.add("hidden"));
+    album.classList.remove("hidden");
+
+    playSong(songs[btn.dataset.target]);
+    album.scrollIntoView({behavior:"smooth", block:"start"});
+  };
+});
+
+document.querySelectorAll(".back").forEach(btn => {
+  btn.onclick = () => {
+    const album = btn.closest(".album");
+    if (album) album.classList.add("hidden");
+    chooser.classList.remove("hidden");
+    playSong(songs.entry);
+    chooser.scrollIntoView({behavior:"smooth", block:"start"});
+  };
+});
+
+document.getElementById("lastBtn").onclick = () => {
+  final.classList.remove("hidden");
+  final.scrollIntoView({behavior:"smooth", block:"start"});
+
+  const cadbury = document.getElementById("cadbury");
+  if (cadbury) {
+    cadbury.classList.add("active");
+    setTimeout(() => cadbury.scrollIntoView({behavior:"smooth", block:"start"}), 450);
+  }
 };
